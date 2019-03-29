@@ -2,13 +2,11 @@
 /*
 var list = document.querySelector(".output-ul");
 list.innerHTML = "";
-
 var greetings = ["Happy Birthday!",
     "Merry Christmas my love",
     "A happy Christmas to all the family",
     "You\'re all I want for Christmas",
     "Get well soon"];
-
 for (var i = 0; i < greetings.length; i++) {
     var input = greetings[i];
     // Your conditional test needs to go inside the parentheses
@@ -26,12 +24,9 @@ for (var i = 0; i < greetings.length; i++) {
 var list = document.querySelector('.output-ul');
 list.innerHTML = '';
 var cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
-
 for (var i = 0; i < cities.length; i++) {
   var input = cities[i];
   // write your code just below here
-
-
   var result = input[0].toUpperCase() + input.slice(1).toLowerCase();
   var listItem = document.createElement('li');
   listItem.textContent = result;
