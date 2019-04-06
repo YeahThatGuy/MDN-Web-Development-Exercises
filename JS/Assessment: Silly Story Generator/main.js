@@ -21,6 +21,7 @@ function result() {
     let zItem = randomValueFromArray(insertZ);
     
     //search for the characters to replace with regex in order to replace all matches, i.e. not just the 1st instance as with regular ":insertx:"
+    //the result of the replace method needs to be assigned to the output string each time in order to get saved
     newStory = newStory.replace(/:insertx:/g, xItem);
     newStory = newStory.replace(/:inserty:/g, yItem);
     newStory = newStory.replace(/:insertz:/g, zItem);
@@ -36,7 +37,7 @@ function result() {
         newStory = newStory.replace("94 fahrenheit", temperature);
         newStory = newStory.replace("300 pounds", weight);
     }
-    
+     
     story.textContent = newStory;
     story.style.visibility = 'visible';
 }
